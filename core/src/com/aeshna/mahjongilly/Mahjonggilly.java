@@ -29,7 +29,8 @@ public class Mahjonggilly extends ApplicationAdapter {
 		batch = new SpriteBatch();
         playerShip = new Texture("blep.jpg");
         friendlyShip = new Texture("penanggallen.jpg");
-        friendlyPlayers = HashMap<String, Starship>();
+        friendlyPlayers = new HashMap<String, Starship>();
+
 		connectSocket();
 		configSocketEvents();
 	}
